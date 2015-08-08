@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		F996659B1B75F37B00DA397D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F996659A1B75F37B00DA397D /* main.m */; };
 		F996659E1B75F37B00DA397D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F996659D1B75F37B00DA397D /* AppDelegate.m */; };
-		F99665A11B75F37B00DA397D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99665A01B75F37B00DA397D /* ViewController.m */; };
 		F99665A41B75F37B00DA397D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99665A21B75F37B00DA397D /* Main.storyboard */; };
 		F99665A61B75F37B00DA397D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99665A51B75F37B00DA397D /* Assets.xcassets */; };
 		F99665A91B75F37B00DA397D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99665A71B75F37B00DA397D /* LaunchScreen.storyboard */; };
+		F99665B81B75F40100DA397D /* MTController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99665B11B75F40100DA397D /* MTController.m */; };
+		F99665B91B75F40100DA397D /* MTKBAvoiding.m in Sources */ = {isa = PBXBuildFile; fileRef = F99665B31B75F40100DA397D /* MTKBAvoiding.m */; };
+		F99665BA1B75F40100DA397D /* MTRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F99665B51B75F40100DA397D /* MTRowView.m */; };
+		F99665BB1B75F40100DA397D /* MTScratchpad.m in Sources */ = {isa = PBXBuildFile; fileRef = F99665B71B75F40100DA397D /* MTScratchpad.m */; };
+		F99665BE1B75F41400DA397D /* VT100.m in Sources */ = {isa = PBXBuildFile; fileRef = F99665BD1B75F41400DA397D /* VT100.m */; };
+		F99665C41B75F93700DA397D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99665C31B75F93700DA397D /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +25,23 @@
 		F996659A1B75F37B00DA397D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F996659C1B75F37B00DA397D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F996659D1B75F37B00DA397D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F996659F1B75F37B00DA397D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F99665A01B75F37B00DA397D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F99665A31B75F37B00DA397D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F99665A51B75F37B00DA397D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F99665A81B75F37B00DA397D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F99665AA1B75F37B00DA397D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99665B01B75F40100DA397D /* MTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTController.h; sourceTree = "<group>"; };
+		F99665B11B75F40100DA397D /* MTController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTController.m; sourceTree = "<group>"; };
+		F99665B21B75F40100DA397D /* MTKBAvoiding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKBAvoiding.h; sourceTree = "<group>"; };
+		F99665B31B75F40100DA397D /* MTKBAvoiding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKBAvoiding.m; sourceTree = "<group>"; };
+		F99665B41B75F40100DA397D /* MTRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRowView.h; sourceTree = "<group>"; };
+		F99665B51B75F40100DA397D /* MTRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTRowView.m; sourceTree = "<group>"; };
+		F99665B61B75F40100DA397D /* MTScratchpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTScratchpad.h; sourceTree = "<group>"; };
+		F99665B71B75F40100DA397D /* MTScratchpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTScratchpad.m; sourceTree = "<group>"; };
+		F99665BC1B75F41400DA397D /* VT100.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VT100.h; sourceTree = "<group>"; };
+		F99665BD1B75F41400DA397D /* VT100.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VT100.m; sourceTree = "<group>"; };
+		F99665BF1B75F88200DA397D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		F99665C11B75F8FF00DA397D /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		F99665C31B75F93700DA397D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99665C41B75F93700DA397D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,9 @@
 		F996658D1B75F37B00DA397D = {
 			isa = PBXGroup;
 			children = (
+				F99665C31B75F93700DA397D /* CoreGraphics.framework */,
+				F99665C11B75F8FF00DA397D /* libstdc++.tbd */,
+				F99665BF1B75F88200DA397D /* CoreText.framework */,
 				F99665981B75F37B00DA397D /* MTerminal */,
 				F99665971B75F37B00DA397D /* Products */,
 			);
@@ -58,10 +78,18 @@
 		F99665981B75F37B00DA397D /* MTerminal */ = {
 			isa = PBXGroup;
 			children = (
+				F99665BC1B75F41400DA397D /* VT100.h */,
+				F99665BD1B75F41400DA397D /* VT100.m */,
 				F996659C1B75F37B00DA397D /* AppDelegate.h */,
 				F996659D1B75F37B00DA397D /* AppDelegate.m */,
-				F996659F1B75F37B00DA397D /* ViewController.h */,
-				F99665A01B75F37B00DA397D /* ViewController.m */,
+				F99665B01B75F40100DA397D /* MTController.h */,
+				F99665B11B75F40100DA397D /* MTController.m */,
+				F99665B21B75F40100DA397D /* MTKBAvoiding.h */,
+				F99665B31B75F40100DA397D /* MTKBAvoiding.m */,
+				F99665B41B75F40100DA397D /* MTRowView.h */,
+				F99665B51B75F40100DA397D /* MTRowView.m */,
+				F99665B61B75F40100DA397D /* MTScratchpad.h */,
+				F99665B71B75F40100DA397D /* MTScratchpad.m */,
 				F99665A21B75F37B00DA397D /* Main.storyboard */,
 				F99665A51B75F37B00DA397D /* Assets.xcassets */,
 				F99665A71B75F37B00DA397D /* LaunchScreen.storyboard */,
@@ -149,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F99665A11B75F37B00DA397D /* ViewController.m in Sources */,
+				F99665BB1B75F40100DA397D /* MTScratchpad.m in Sources */,
 				F996659E1B75F37B00DA397D /* AppDelegate.m in Sources */,
+				F99665BA1B75F40100DA397D /* MTRowView.m in Sources */,
+				F99665B81B75F40100DA397D /* MTController.m in Sources */,
+				F99665BE1B75F41400DA397D /* VT100.m in Sources */,
+				F99665B91B75F40100DA397D /* MTKBAvoiding.m in Sources */,
 				F996659B1B75F37B00DA397D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,7 +216,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -227,7 +259,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -261,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = MTerminal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.A.MTerminal;
@@ -272,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = MTerminal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.A.MTerminal;

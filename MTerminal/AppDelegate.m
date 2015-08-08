@@ -16,7 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.rootViewController=controller=[[MTController alloc] init];
+    [_window makeKeyAndVisible];
+
     return YES;
 }
 
@@ -28,6 +31,7 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+      if(!controller.isRunning){[application terminateWithSuccess];}
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
