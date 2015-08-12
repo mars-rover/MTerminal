@@ -306,12 +306,12 @@ static NSString* $_getTitle(VT100* terminal) {
 -(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)ipath {
   UITableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:@"Cell"];
   MTRowView* rowView;
-  if(cell){rowView=(MTRowView*)cell.backgroundView;}
+  if(cell) {
+    rowView = (MTRowView*)cell.backgroundView;
+  }
   else {
-    cell=[[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-     reuseIdentifier:@"Cell"] autorelease];
-    cell.backgroundView=rowView=[[[MTRowView alloc] initWithBackgroundColor:bgDefault
-     ascent:glyphAscent height:glyphHeight midY:glyphMidY] autorelease];
+    cell=[[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"] autorelease];
+    cell.backgroundView = rowView = [[[MTRowView alloc] initWithBackgroundColor:bgDefault ascent:glyphAscent height:glyphHeight midY:glyphMidY] autorelease];
   }
   CFIndex length,cursorColumn;
   screen_char_t* ptr=[activeTerminal charactersAtLineIndex:ipath.row
@@ -319,7 +319,9 @@ static NSString* $_getTitle(VT100* terminal) {
   if(ptr){
     unichar* ucbuf=malloc(length*sizeof(unichar));
     CFIndex i;
-    for (i=0;i<length;i++){ucbuf[i]=ptr[i].c?:' ';}
+    for (i=0;i<length;i++) {
+        ucbuf[i]=ptr[i].c?:' ';
+    }
     CFStringRef ucstr=CFStringCreateWithCharactersNoCopy(NULL,ucbuf,length,kCFAllocatorMalloc);
     CFMutableAttributedStringRef string=CFAttributedStringCreateMutable(NULL,length);
     CFAttributedStringBeginEditing(string);
